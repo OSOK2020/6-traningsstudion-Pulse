@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Boka</title>
 </head>
 <body>
@@ -18,10 +19,58 @@
             <input type="email" id="email" name="email" required>
 
             <fieldset>
-                <legend>Pass</legend>
-                
+                <legend>Pass (välj en eller flera)</legend>
+                <label for="yoga">Yoga</label>
+                <input type="checkbox" id="yoga" name="trainingType" value="yoga">
+            
+                <label for="cirkletraining">Cirkelträning</label>
+                <input type="checkbox" name="trainingType" id="cirkletraining" value="cirkletraining">
+            
+                <label for="meditation">Meditation</label>
+                <input type="checkbox" name="trainingType" id="meditation" value="meditation">
+            
+                <label for="zumba">Zumba</label>
+                <input type="checkbox" name="trainingType" id="zumba" value="zumba">
+            
+                <label for="simning">Simning</label>
+                <input type="checkbox" name="trainingType" id="simning" value="simning">
+            
+                <label for="cycling">Cykelträning</label>
+                <input type="checkbox" name="trainingType" id="cycling" value="cycling">
             </fieldset>      
         </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Pass</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td> Måndagar</td>
+                    <td> 07.00 Yoga & 18.00 Cirkelträning</td>
+                </tr>
+
+                <tr>
+                    <td> Onsdagar </td>
+                    <td> 07.30 meditation & 19.00 Zumba </td>
+                </tr>
+
+                <tr>
+                    <td>Fredagar</td>
+                    <td> 08.30 simning & 17.00 cykelträning</td>
+                </tr>
+
+                <tr>
+                    <td>Lördagar</td>
+                    <td> 09.00 Zumba</td>
+                </tr>
+
+            </tbody>
+        </table>
     </main>
 </body>
 </html>
