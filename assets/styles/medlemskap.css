@@ -1,0 +1,137 @@
+
+
+
+header {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../images/medlemskap/header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    display: none;
+}
+
+.membership-options{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.membership-option {
+    background-color: #f4f4f4;
+    padding: 4rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.membership-option h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.membership-option p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.membership-option .btn{
+    background-color: #0a0a0a;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.membership-option a:hover {
+    background-color: #333;
+}
+
+.membership-option ul li{
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+
+.membership-benefits {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 0.5rem;
+}
+
+.membership-benefits h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.membership-benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.membership-benefits ul li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.membership-benefits ul li::before {
+    content: "✓";
+    color: green;
+    margin-right: 0.5rem;
+}
+
+.testimonials {
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 0.5rem;
+}
+
+.testimonials h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial .author {
+    font-size: 1rem;
+    color: #555;
+}
+
+.author {
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 1000px) {
+    .membership-options {
+        grid-template-columns: 1fr;
+    }
+    .membership-option {
+        padding: 2rem;
+    }
+}
