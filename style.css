@@ -38,3 +38,39 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: #ddd;
 }
+
+form {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ram {
+    border: 2px solid black;
+    background-color: coral;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ramrubrik {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+button {
+    border: 2px solid black;
+    background-color: coral;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.boka:hover {
+    border: 2px solid coral;
+    background-color: white;
+}

@@ -34,10 +34,10 @@
             <input type="text" name="namn" id="namn" required placeholder="Ditt namn">
 
             <label for="email">E-post:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="Din E-post">
 
-            <fieldset>
-                <legend>Pass (välj en eller flera)</legend>
+            <fieldset class="ram">
+                <legend class="ramrubrik">Pass (välj en eller flera)</legend>
                 <label for="yoga">Yoga</label>
                 <input type="checkbox" id="yoga" name="trainingType" value="yoga">
             
@@ -55,9 +55,10 @@
             
                 <label for="cycling">Cykelträning</label>
                 <input type="checkbox" name="trainingType" id="cycling" value="cycling">
-            </fieldset>      
+            </fieldset>    
+            <button type="submit" class="boka">Boka</button>  
         </form>
-
+        
         <table>
             <thead>
                 <tr>
