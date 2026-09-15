@@ -21,22 +21,19 @@ h1 {
     background-size: cover;
     background-position: center;
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .ram-trainingstype {
     border: 2px solid black;
     background-color: lightpink;
     padding: 2rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
 }
 
 .ram-trainingstype:hover{
@@ -185,3 +182,38 @@ fieldset {
     padding: 1rem;
     border-radius: 1rem;
 }
+
+/* .simning {
+    background-image: url(../images/simning.png);
+    background-size: auto;
+    background-position: center;
+    font-weight: bold;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#simning {
+    background-color: lightpink;
+} */
+
+/* 
+.cycling {
+    background-image: url(../images/cycling.png);
+    background-size: contain;
+    background-position: center;
+    font-weight: bold;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cycling {
+    background-color: lightpink;
+}  */
