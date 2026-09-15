@@ -12,68 +12,66 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <title>Boka</title>
 </head>
-<body>
-    
+<body id="form-header">
     <nav>
         <div class="logo"><img src="assets/images/logo.png" alt="Träningsstudion Pulse Logo"></div>
         <ul>
-            <li><a href="index.html" target="_blank" rel="noopener noreferrer">Hem</a></li>
-            <li><a href="boka.html" target="_blank" rel="noopener noreferrer">Boka</a></li>
-            <li><a href="schema.html" target="_blank" rel="noopener noreferrer">Schema</a></li>
-            <li><a href="medlemskap.html" target="_blank" rel="noopener noreferrer">Medlemskap</a></li>
-            <li><a href="kontakt.html" target="_blank" rel="noopener noreferrer">Kontakt</a></li>
+            <li><a href="index.html" rel="noopener noreferrer">Hem</a></li>
+            <li><a href="boka.html" rel="noopener noreferrer">Boka</a></li>
+            <li><a href="schema.html" rel="noopener noreferrer">Schema</a></li>
+            <li><a href="medlemskap.html" rel="noopener noreferrer">Medlemskap</a></li>
+            <li><a href="kontakt.html" rel="noopener noreferrer">Kontakt</a></li>
         </ul>
     </nav>
-
     <header>
         <h1>Boka in dig på pass i Pulse</h1>
     </header>
     <main>
         <form action="#" method="post">
-            <div class="userinput">
-            <label for="namn">Namn:</label>
-            <input type="text" name="namn" id="namn" required placeholder="Ditt namn">
+            <div id="userlable-input">
+            <label class="userlable" for="namn">Namn:</label>
+            <input class="userinput" type="text" name="namn" id="namn" required placeholder="Vänligen fyll i ditt fullständiga namn">
 
-            <label for="email">E-post:</label>
-            <input type="email" id="email" name="email" required placeholder="Din E-post">
+            <label class="userlable" for="email">E-post:</label>
+            <input class="userinput" type="email" id="email" name="email" required placeholder="Vänligen fyll i din E-post">
             </div>
             <div class="submit">
-                    <fieldset class="ram">
+                    <fieldset id="ram">
                         <legend class="ramrubrik">Pass (välj en eller flera)</legend>
                     <table>
                         <tbody>
                             <tr>
-                                <td class="ram">
+                                <td class="ram-trainingstype">
                                     <label for="yoga">Yoga (07:00 - Måndagar)</label>
                                     <input type="checkbox" id="yoga" name="trainingType" value="yoga">
                                 </td>
                             </tr>
                             <tr>
-                                <td class="ram">
+                                <td class="ram-trainingstype">
                                     <label for="cirkletraining">Cirkelträning (18:00 - Måndagar)</label>
                                     <input type="checkbox" name="trainingType" id="cirkletraining" value="cirkletraining">
                                 </td>
                             </tr>
                             <tr>
-                                <td class="ram">
+                                <td class="ram-trainingstype">
                             <label for="meditation">Meditation (07:30 - Onsdagar)</label>
                             <input type="checkbox" name="trainingType" id="meditation" value="meditation">
                                 </td>
                             </tr>
                             <tr>
-                                <td class="ram">
+                                <td class="ram-trainingstype">
                             <label for="zumba">Zumba (19:00 - Onsdagar)</label>
                             <input type="checkbox" name="trainingType" id="zumba" value="zumba">
                                 </td>
                             </tr>
                             <tr>
-                                <td class="ram">    
+                                <td class="ram-trainingstype">    
                             <label for="simning">Simning (08:30 - Fredagar)</label>
                             <input type="checkbox" name="trainingType" id="simning" value="simning">
                                 </td>
                             </tr>
                             <tr>
-                                <td class="ram">   
+                                <td class="ram-trainingstype">   
                             <label for="cycling">Cykelträning (17:00 - Fredagar)</label>
                             <input type="checkbox" name="trainingType" id="cycling" value="cycling">
                                 </td>
@@ -85,7 +83,7 @@
             </div>
         </form>
         <form action="#" method="post" class="meddelandeform">
-            <fieldset class="ram-med">
+            <fieldset id="ram-med">
             <legend class="med-legend">Anmäl dina Önskningar</legend>
             <label for="onskad-dag">Önskade dagar</label>
             <div class="selectors">
@@ -98,9 +96,9 @@
                 <option value="fredag">Fredag</option>
             </select>
             </div>
-            <label for="meddelande">Meddelande</label>
-            <textarea id="meddelande" name="meddelande" rows="6"></textarea>
-            <button type="submit">Skicka in önskning</button>
+            <label id="med-text" for="meddelande">Meddelande</label>
+            <textarea id="meddelande" name="meddelande" rows="6" placeholder="Skriv in ditt önskemål här så ska vi göra vårt bästa att bemöta det! <3"></textarea>
+            <button type="submit" id="med-btn">Skicka in önskning</button>
             </fieldset>
         </form>
     </main>
