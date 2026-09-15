@@ -30,66 +30,60 @@
     </header>
     <main>
         <form action="#" method="post">
+            <div class="userinput">
             <label for="namn">Namn:</label>
             <input type="text" name="namn" id="namn" required placeholder="Ditt namn">
 
             <label for="email">E-post:</label>
             <input type="email" id="email" name="email" required placeholder="Din E-post">
-
-            <fieldset class="ram">
-                <legend class="ramrubrik">Pass (välj en eller flera)</legend>
-                <label for="yoga">Yoga</label>
-                <input type="checkbox" id="yoga" name="trainingType" value="yoga">
-            
-                <label for="cirkletraining">Cirkelträning</label>
-                <input type="checkbox" name="trainingType" id="cirkletraining" value="cirkletraining">
-            
-                <label for="meditation">Meditation</label>
-                <input type="checkbox" name="trainingType" id="meditation" value="meditation">
-            
-                <label for="zumba">Zumba</label>
-                <input type="checkbox" name="trainingType" id="zumba" value="zumba">
-            
-                <label for="simning">Simning</label>
-                <input type="checkbox" name="trainingType" id="simning" value="simning">
-            
-                <label for="cycling">Cykelträning</label>
-                <input type="checkbox" name="trainingType" id="cycling" value="cycling">
-            </fieldset>    
-            <button type="submit" class="boka">Boka</button>  
+            </div>
+            <div class="submit">
+                    <fieldset class="ram">
+                        <legend class="ramrubrik">Pass (välj en eller flera)</legend>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="ram">
+                                    <label for="yoga">Yoga (07:00 - Måndagar)</label>
+                                    <input type="checkbox" id="yoga" name="trainingType" value="yoga">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ram">
+                                    <label for="cirkletraining">Cirkelträning (18:00 - Måndagar)</label>
+                                    <input type="checkbox" name="trainingType" id="cirkletraining" value="cirkletraining">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ram">
+                            <label for="meditation">Meditation (07:30 - Onsdagar)</label>
+                            <input type="checkbox" name="trainingType" id="meditation" value="meditation">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ram">
+                            <label for="zumba">Zumba (19:00 - Onsdagar)</label>
+                            <input type="checkbox" name="trainingType" id="zumba" value="zumba">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ram">    
+                            <label for="simning">Simning (08:30 - Fredagar)</label>
+                            <input type="checkbox" name="trainingType" id="simning" value="simning">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ram">   
+                            <label for="cycling">Cykelträning (17:00 - Fredagar)</label>
+                            <input type="checkbox" name="trainingType" id="cycling" value="cycling">
+                                </td>
+                            </tr>
+                    </fieldset> 
+                </tbody>  
+            </table> 
+            <button type="submit" class="boka-btn">Boka</button>  
+            </div>
         </form>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Pass</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-
-                <tr>
-                    <td> Måndagar</td>
-                    <td> 07.00 Yoga & 18.00 Cirkelträning</td>
-                </tr>
-
-                <tr>
-                    <td> Onsdagar </td>
-                    <td> 07.30 meditation & 19.00 Zumba </td>
-                </tr>
-
-                <tr>
-                    <td>Fredagar</td>
-                    <td> 08.30 simning & 17.00 cykelträning</td>
-                </tr>
-
-                <tr>
-                    <td>Lördagar</td>
-                    <td> 09.00 Zumba</td>
-                </tr>
-
-            </tbody>
-        </table>
     </main>
 </body>
 </html>

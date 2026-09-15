@@ -39,22 +39,14 @@ tbody tr:hover {
     background-color: #ddd;
 }
 
-form {
-    padding: 2rem;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-}
-
 .ram {
     border: 2px solid black;
-    background-color: coral;
+    background-color: lightpink;
     padding: 2rem;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .ramrubrik {
@@ -65,12 +57,44 @@ form {
 
 button {
     border: 2px solid black;
-    background-color: coral;
+    background-color: lightpink;
     padding: 1rem;
     margin: 1rem;
+    font-weight: bold;
+    font-size: larger;
 }
 
-.boka:hover {
-    border: 2px solid coral;
-    background-color: white;
+.userinput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boka-btn:hover {
+    border: 2px solid lightpink;
+    background-color: rgb(24, 23, 23);
+    color: #ccc;
+    font-size: x-large;
+}
+
+fieldset {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid gray;
+}
+
+.tableboka {
+    border: 2px solid black;
+    background-color: lightpink;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+
 }
