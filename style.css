@@ -118,3 +118,26 @@ fieldset {
     align-items: center;
     justify-content: center;
 }
+
+.med-legend {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.ram-med {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid gray;
+    width: 100%;
+}
+
+#meddelande{
+    width: 75%;
+    padding: 1rem;
+    border: 2px solid #ccc;
+}
