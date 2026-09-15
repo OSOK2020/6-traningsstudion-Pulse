@@ -49,6 +49,10 @@ tbody tr:hover {
     justify-content: center;
 }
 
+.ram:hover{
+    background-color: #ddd;
+}
+
 .ramrubrik {
     text-align: center;
     font-size: x-large;
@@ -96,5 +100,4 @@ fieldset {
 .submit {
     display: flex;
     flex-direction: column;
-
 }
