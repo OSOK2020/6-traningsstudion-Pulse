@@ -35,52 +35,41 @@
             <label class="userlable" for="email">E-post:</label>
             <input class="userinput" type="email" id="email" name="email" required placeholder="Vänligen fyll i din E-post">
             </div>
-            <div class="submit">
-                    <fieldset id="ram">
-                        <legend class="ramrubrik">Pass (välj en eller flera)</legend>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td class="ram-trainingstype">
-                                    <label or="yoga">Yoga (07:00 - Måndagar)</label>
-                                    <input type="checkbox" id="yoga" name="trainingType" value="yoga">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ram-trainingstype">
-                                    <label raining" for="cirkletraining">Cirkelträning (18:00 - Måndagar)</label>
-                                    <input type="checkbox" name="trainingType" id="cirkletraining" value="cirkletraining">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ram-trainingstype">
+                <fieldset id="ram">
+                    <legend class="ramrubrik">Pass (välj en eller flera)</legend>
+                        <div class="trainingtype">
+                            <label for="yoga">Yoga (07:00 - Måndagar)</label>
+                            <input type="checkbox" id="yoga" name="trainingType" value="yoga">
+                        </div>
+
+                        <div class="trainingtype">
+                            <label raining" for="cirkletraining">Cirkelträning (18:00 - Måndagar)</label>
+                            <input type="checkbox" name="trainingType" id="cirkletraining" value="cirkletraining">
+                        </div>
+
+                        <div class="trainingtype">
                             <label for="meditation">Meditation (07:30 - Onsdagar)</label>
                             <input type="checkbox" name="trainingType" id="meditation" value="meditation">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ram-trainingstype">
+                        </div>
+                        
+                        <div class="trainingtype">
                             <label for="zumba">Zumba (19:00 - Onsdagar)</label>
                             <input type="checkbox" name="trainingType" id="zumba" value="zumba">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ram-trainingstype">    
+                        </div>
+
+                        <div class="trainingtype">
                             <label for="simning">Simning (08:30 - Fredagar)</label>
                             <input type="checkbox" name="trainingType" id="simning" value="simning">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="ram-trainingstype">   
+                        </div>
+                           
+                        <div class="trainingtype">
                             <label for="cycling">Cykelträning (17:00 - Fredagar)</label>
                             <input type="checkbox" name="trainingType" id="cycling" value="cycling">
-                                </td>
-                            </tr>
-                    </fieldset> 
-                </tbody>  
-            </table> 
-            <button type="submit" class="boka-btn">Boka</button>  
-            </div>
+                        </div>
+                </fieldset> 
+            <div class="boka-form">
+                <button type="submit" class="boka-btn">Boka</button>
+            </div>      
         </form>
         <form action="#" method="post" class="meddelandeform">
             <fieldset id="ram-med">
