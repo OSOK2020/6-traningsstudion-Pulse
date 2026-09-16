@@ -163,9 +163,24 @@ fieldset {
     border-radius: 1rem;
 }
 
+#med-btn {
+    border: 2px solid black;
+    background-color: #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: larger;
+}
 #med-btn:hover {
     background-color: greenyellow;
     border: none;
+}
+
+#med-form-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #med-text {
