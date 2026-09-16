@@ -15,18 +15,34 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
 #ram {
     border: 2px solid black;
-    background-image: url(../images/medlemskap/header.jpg);
-    background-size: cover;
-    background-position: center;
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    background-image: url(../images/medlemskap/header.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .trainingtype:hover{
     background-color: greenyellow;
+}
+
+.trainingtype {
+    border: 2px solid black;
+    background-color: #ccc;
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: xx-large;
+    font-weight: bold;
+    color: aliceblue;
 }
 
 .ramrubrik {
@@ -93,18 +109,6 @@ fieldset {
     background-color: #ccc;
     margin: 1rem;
 }
-
-.trainingtype {
-    border: 2px solid black;
-    background-color: #ccc;
-    padding: 2rem;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 
 .meddelandeform {
     background-color: #ccc;
