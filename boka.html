@@ -85,7 +85,7 @@
         <form action="#" method="post" class="meddelandeform">
             <fieldset id="ram-med">
             <legend class="med-legend">Anmäl dina Önskningar</legend>
-            <label for="onskad-dag">Önskade dagar</label>
+            <label id="dag-label" for="onskad-dag">Önskade dagar</label>
             <div class="selectors">
             <select id="onskad-dag" name="onskad-dag" required multiple size="5">
                 <option value="">Välj dag (CTRL+klick)</option>
@@ -96,7 +96,7 @@
                 <option value="fredag">Fredag</option>
             </select>
             </div>
-            <label t" for="meddelande">Meddelande</label>
+            <label id="med-label" for="meddelande">Meddelande</label>
             <textarea id="meddelande" name="meddelande" rows="6" placeholder="Skriv in ditt önskemål här så ska vi göra vårt bästa att bemöta det! <3"></textarea>
             <button type="submit" id="med-btn">Skicka in önskning</button>
             </fieldset>

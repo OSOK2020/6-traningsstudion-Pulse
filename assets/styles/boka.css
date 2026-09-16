@@ -181,6 +181,18 @@ fieldset {
     border-radius: 1rem;
 }
 
+#med-label {
+    padding: 4px;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 2px white;
+    font-weight: bold;
+}
+
+#dag-label {
+    font-weight: bold;
+    text-shadow: 2px 2px 3px white;
+}
+
 /* .simning {
     background-image: url(../images/simning.png);
     background-size: auto;
